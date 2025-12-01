@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - COIN MIND</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <a href="index.html" class="logo-area">
+        <img src="images/logo.png" class="logo-img" alt="Coin Minds Logo">
+        <span class="logo-text">COIN MINDS</span>
+    </a>
+
+
+    <nav class="nav-links">
+        <a href="index.html">HOME</a>
+        <span>|</span>
+        <a href="learn_crypto.html">LEARN CRYPTO</a>
+        <span>|</span>
+        <a href="analytics.html">ANALYTICS</a>
+        <span>|</span>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div class="top-right">
+        <input class="search-box" placeholder="Search">
+        <a href="loginin.html" class="auth-link" >LOG IN</a>
+        <span>|</span>
+        <a href="signup.html" class="auth-link">SIGN UP</a>
+    </div>
+</header>
+<section class="faq-page">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <button class="faq-question">What is Cryptocurrency?</button>
+        <div class="faq-answer">
+            <p>
+                Cryptocurrency is a digital asset built on blockchain technology
+                that allows secure, decentralized transactions without a central authority.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Is crypto safe for beginners?</button>
+        <div class="faq-answer">
+            <p>
+                Crypto can be safe if you learn the basics, use trusted exchanges,
+                enable two-factor authentication, and never share your private keys.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Where do I buy Bitcoin?</button>
+        <div class="faq-answer">
+            <p>
+                You can buy Bitcoin on exchanges like Binance, Coinbase, Kraken,
+                or other regulated crypto platforms available in your country.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Do I need a crypto wallet?</button>
+        <div class="faq-answer">
+            <p>
+                Yes—wallets keep your crypto safe. You can use software wallets
+                (like MetaMask) or hardware wallets (like Ledger).
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach(q => {
+        q.addEventListener("click", () => {
+            q.nextElementSibling.classList.toggle("open");
+            q.classList.toggle("active");
+        });
+    });
+</script>
+
+</body>
+</html>
